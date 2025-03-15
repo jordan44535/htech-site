@@ -1,1 +1,1 @@
-var scale = 800;
+var scale = 400;
