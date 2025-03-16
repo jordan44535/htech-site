@@ -1,1 +1,2 @@
-var scale = 600;
+var scale = 800;
+var scaleBoka = scale 
