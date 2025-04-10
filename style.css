@@ -206,3 +206,84 @@
     .footerLinks:hover {
         cursor: pointer;
         animation: hover .25s ease 0s 1 normal forwards;}
+
+/* Адаптивный дизайн */
+@media (max-width: 1200px) {
+    .mainSite {
+        font-size: 40px;
+        padding: 10px;
+    }
+    .contentBox {
+        width: 80%;
+        padding: 10px;
+    }
+    .right {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .footer {
+        font-size: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerLinks {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .razdelH {
+        width: 100%;
+        height: 3px;
+    }
+    .knopka {
+        font-size: 24px;
+        padding: 8px;
+    }
+    .titleH {
+        font-size: 36px;
+    }
+    .contentBox {
+        width: 90%;
+    }
+    .icons {
+        width: 40px;
+        height: 40px;
+    }
+    .footer {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainSite {
+        font-size: 30px;
+    }
+    .welcome {
+        font-size: 24px;
+    }
+    .contentBox {
+        padding: 5px;
+    }
+    .footerLinks {
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+
+/* Исправление багов */
+.contentBox {
+    box-sizing: border-box;
+    overflow: hidden; /* Убирает лишние элементы за границами */
+}
+.footer {
+    flex-wrap: wrap; /* Исправляет переполнение */
+}
+.knopka, .footerLinks {
+    text-align: center; /* Центрирование текста */
+}
